@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Market Place | Shopping Cart</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>The MarketPlace</h1>
+        <a href="index.html">
+            <img src="images/the_marketplace_logo_2.jpg" alt="The Market Place">
+        </a>
+
+        <form class="search-box">
+            <input type="search" class="search-input" placeholder="Search...">
+            <input type="submit" class="search-button" value="Search">
+        </form>
+
+        <nav class="icons">
+            <i class="fa-solid fa-location-dot"></i>
+            <i class="fa-solid fa-user"></i>
+            <a href="shopping_cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </nav>
+    </header>
+
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="explore_rooms.html">Rooms</a>
+        <a href="shopping_cart.html">Cart</a>
+    </nav>
+
+    <main id="cart-main">
+        <h2>Shopping Cart</h2>
+
+        <!-- Left Column -->
+        <article class="left-column">
+            <h2 class="visually-hidden">Left Column</h2>
+
+            <!-- Order Summary -->
+            <section class="order-summary">
+                <header>
+                    <nav class="icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </nav>
+                    <h3>Order summary</h3>
+                </header>
+
+                <article class="order-container">
+                    <h2 class="visually-hidden">Shopping Cart Items</h2>
+                    <nav class="order-header">
+                        <span>Name</span>
+                        <span>Price</span>
+                        <span>Quantity</span>
+                        <span>Total</span>
+                        <span></span>
+                    </nav>
+
+                    <ul class="order-items">
+                        <li class="order-item">
+                            <picture>
+                                <img src="images/office_chair_small.jpg" alt="Office Chair">
+                            </picture>
+                            <section class="product-details">
+                                <h2 class="visually-hidden">Product Information</h2>
+                                <p>Product name</p>
+                                <select>
+                                    <option>Office Chair</option>
+                                </select>
+                            </section>
+                            <span data-label="Price:">$52</span>
+                            <span data-label="Quantity:" class="quantity">2</span>
+                            <span data-label="Total:">$104</span>
+                            <nav class="icon">
+                                <i class="fa-solid fa-trash"></i>
+                            </nav>
+                        </li>
+
+                        <li class="order-item">
+                            <picture>
+                                <img src="/images/grey_sofa_small.jpg" alt="Grey Sofa">
+                            </picture>
+                            <section class="product-details">
+                                <h2 class="visually-hidden">Product Details</h2>
+                                <p>Product name</p>
+                                <select>
+                                    <option>Grey Sofa</option>
+                                </select>
+                            </section>
+                            <span data-label="Price:">$450</span>
+                            <span data-label="Quantity:" class="quantity">1</span>
+                            <span data-label="Total:">$450</span>
+                            <nav class="icon">
+                                <i class="fa-solid fa-trash"></i>
+                            </nav>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+            <!-- Delivery Options -->
+            <section class="delivery-options">
+                <header>
+                    <nav class="icon">
+                        <i class="fa-solid fa-truck"></i>
+                    </nav>
+                    <h3>Delivery options</h3>
+                </header>
+
+                <nav class="delivery-grid">
+                    <article class="delivery-option">
+                        <nav class="delivery-header">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </nav>
+                        <h3>$22</h3>
+                        <p>Instant delivery</p>
+                        <p>Est. arrival: Today</p>
+                    </article>
+
+                    <article class="delivery-option">
+                        <nav class="delivery-header">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </nav>
+                        <h3>$12</h3>
+                        <p>Standard delivery</p>
+                        <p>Est. arrival: DD/MM</p>
+                    </article>
+                </nav>
+            </section>
+
+            <!-- Customer Information -->
+            <section class="customer-information"> 
+                <header>
+                    <nav class="icon">
+                        <i class="fa-solid fa-user"></i>
+                    </nav>
+                    <h3>Customer information</h3>
+                </header>
+
+                <form>
+                    <label for="yname">Your name:</label>
+                    <input type="text" name="yname" id="yname" placeholder="Enter your name">
+                    <label for="ynumber">Phone number:</label>
+                    <input type="text" name="ynumber" id="ynumber" placeholder="Enter your phone number">
+                    <label for="yemail">Email:</label>
+                    <input type="email" name="yemail" id="yemail" placeholder="Enter your email address">
+                </form>
+
+                <button class="checkout-btn">Submit</button>
+            </section>
+        </article>
+
+        <aside class="payment-section">
+            <div class="payment-wrapper">
+                <section>
+                    <h3>Payment method</h3>
+                    <a href="#" class="change-link">Change payment methods</a>
+
+                    <article class="payment-method">
+                        <h2 class="visually-hidden">Payment Method</h2>
+                        <span><i class="fa-brands fa-cc-mastercard"></i></span>
+                        <p>Mastercard</p>
+                        <span>**** 5987</span>
+                    </article>
+                </section>
+
+                <section>
+                    <h3>Summary</h3>
+
+                    <ul class="summary-list">
+                        <li>
+                            <span>Subtotal</span>
+                            <span>$554</span>
+                        </li>
+
+                        <li>
+                            <span>Discount</span>
+                            <span>-</span>
+                        </li>
+
+                        <li>
+                            <span>Delivery Fee</span>
+                            <span>$22</span>
+                        </li>
+
+                        <li class="total">
+                            <span>Total</span>
+                            <span class="amount">$576</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <button class="checkout-btn">Proceed to payment</button>
+            </div>
+        </aside>
+            
+    </main>
+
+    <footer class="footer">
+        <a href="index.html" class="footer-logo">
+            <picture>
+                <img src="images/the_marketplace_logo_small.jpg" alt="Logo">
+            </picture>
+        </a>
+        <!-- Column 1: About -->
+        <section class="footer-column">
+            <h2>About</h2>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="explore_rooms.html">Rooms</a></li>
+                <li><a href="shopping_cart.html">Cart</a></li>
+            </ul>
+        </section>
+
+        <!-- Column 2: Help -->
+        <section class="footer-column">
+            <h2>Help</h2>
+            <ul class="nav-links">
+                <li><a href="shipping_and_return.html">Shipping & Returns</a></li>
+                <li><a href="our_story.html">Our Story</a></li>
+                <li><a href="policies/Privacy_Policy.pdf" target="_blank">Privacy Policy</a></li>
+                <li><a href="policies/Copyright_Policy.pdf" target="_blank">Copyright</a></li>
+            </ul>
+        </section>
+            
+        <!-- Column 3: Others -->
+        <section class="footer-column footer-right">
+            <h2>Others</h2>
+            <ul class="nav-links">
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="collection_and_delivery.html">Collection and Delivery</a></li>
+                <li><a href="policies/Disclaimer.pdf" target="_blank">Disclaimer</a></li>
+            </ul>
+
+        <!-- Social Media Icons -->
+            <nav class="social-icons">
+                <i class="fa-brands fa-twitter-square"></i>
+                <i class="fa-brands fa-facebook-square"></i>
+                <i class="fa-brands fa-instagram-square"></i>
+                <i class="fa-brands fa-youtube-square"></i>
+            </nav>
+                
+        <!-- Copyright -->
+            <p class="copyright">&copy; 2025 The Marketplace.</p>
+        </section>
+    </footer>
+
+</body>
+</html>
