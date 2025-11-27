@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desy Rikayanti | Contact Me</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+	<header>
+		<section>
+			<h1>Desy Rikayanti</h1>
+			<p>Website Developer and Civil (Geotechnical) Engineer</p>
+		</section>
+        
+        <nav>
+			<ul>
+				<li class="dropdown">
+					<details>
+						<summary>About me</summary>
+						<a href="website.html">Website Developer</a>
+						<a href="geotechnical.html">Geotechnical Engineer</a>
+					</details>
+				</li>
+
+				<li><a href="index.html">Home</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+        </nav>
+	</header>
+
+	<main id="contact-main">
+    	<form action="#" method="post" id="theForm">
+        	<fieldset>
+				<h2>Contact</h2>
+
+				<section class="two">
+					<h3 class="visually-hidden">Full Name</h3>
+					<label for="fullName">Full Name</label>
+					<input type="text" name="fullName" id="fullName" required>
+					<span class="checkmark" id="fullName-check">&check;</span>
+				</section>
+			
+				<section class="two">
+					<h3 class="visually-hidden">Email</h3>
+					<label for="email">Email</label><input type="email" name="email" id="email" required>
+					<span class="checkmark" id="email-check">&check;</span>
+				</section>
+			
+				<section class="two phone-field">
+					<h3 class="visually-hidden">Phone Number</h3>
+					<label for="phone">Phone Number</label>
+					<input type="text" name="phone" id="phone" required>
+					<span class="tooltip">Your Phone number should be in the format 041 234 5678.</span>
+					<span class="checkmark" id="phone-check">&check;</span>
+				</section>
+
+				<section class="two">
+					<h3 class="visually-hidden">Message</h3>
+					<label for="subject">Message Subject</label>
+					<input type="text" name="subject" id="subject" required>
+					<span class="checkmark" id="subject-check">&check;</span>
+				</section>
+
+				<section class="two">
+					<h3 class="visually-hidden">Message Body</h3>
+					<label for="message">Message Body</label>
+					<textarea name="message" id="message" required></textarea>
+					<span class="checkmark" id="message-check">&check;</span>
+				</section>
+			   
+				<section class="one">
+					<h3 class="visually-hidden">Check Box</h3>
+					<input type="checkbox" name="terms" id="terms" required> I agree to the terms and condition
+				</section>
+
+				<section class="one">
+					<h3 class="visually-hidden">Submit</h3>
+					<input type="submit" value="Send" id="submit">
+				</section>
+        	</fieldset>
+    	</form>
+	</main>
+
+	<footer>
+  		<section>
+			<h3 class="visually-hidden">Footer</h3>
+    		<aside>
+      			<h2>Say hello and let's work together!</h2>
+				<a href="contact.html">Contact Me</a>
+
+				<nav>
+					<ul>
+						<li class="dropdown">
+							<details>
+								<summary>About me</summary>
+								<a href="website.html">Website Developer</a>
+								<a href="geotechnical.html">Geotechnical Engineer</a>
+							</details>
+						</li>
+
+						<li><a href="index.html">Home</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+        		</nav>
+
+      			<nav>
+        			<a href="https://www.linkedin.com/in/desyrikayanti" target="_blank">
+    					<i class="fa-brands fa-linkedin"></i>
+  					</a>
+  					<a href="https://queenikadesy2025.github.io/rika_dev.github.io/" target="_blank">
+    					<i class="fa-brands fa-github"></i>
+  					</a>
+  					<a href="mailto:rikayanti.desy@outlook.com">
+    					<i class="fa-regular fa-envelope"></i>
+  					</a>
+	  			</nav>
+    		</aside>
+  		</section>
+  
+  		<p>© 2025 Present Desy Rikayanti • All Rights Reserved.</p>
+	</footer>
+
+    <script src="js/utilities.js"></script>
+    <script src="js/errorMessages.js"></script>
+	<script src="js/successMessage.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>
