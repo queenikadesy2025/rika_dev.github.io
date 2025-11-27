@@ -338,7 +338,7 @@ nav li details summary::-webkit-details-marker {
 }
 
 .download-section .download-btn {
-    color: #000;
+    color: #fff;
     border: none;
     padding: 15px 40px;
     font-size: 16px;
